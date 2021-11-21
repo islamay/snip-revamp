@@ -1,0 +1,23 @@
+.container {
+    height: 30px;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    padding: 0 calc(var(--page-padding) * .25);
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        padding: 0 var(--ipad-padding);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        padding: 0 var(--laptop-padding);
+    }
+}

@@ -1,0 +1,32 @@
+.container {
+    --height: 2.5em;
+    flex-grow: 1;
+    border: 1px solid var(--white);
+    border-radius: calc(var(--height) / 2);
+    height: var(--height);
+    align-items: center;
+    padding: 0 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.input {
+    width: 100%;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+}
+
+.search-icon,
+.filter-icon {
+    width: calc(var(--nav-icon-size) / 1.5);
+    height: calc(var(--nav-icon-size) / 1.5);
+}
+
+.search-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}

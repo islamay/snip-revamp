@@ -1,0 +1,15 @@
+.snip-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.snip-brand__short-name {
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.snip-brand__full-name {
+    margin: 0;
+    font-weight: normal;
+}

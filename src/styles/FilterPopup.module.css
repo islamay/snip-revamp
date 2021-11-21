@@ -1,0 +1,13 @@
+.container {
+    display: none;
+    position: absolute;
+    width: 175px;
+    height: 200px;
+    top: 50px;
+    right: 0;
+    background-color: var(--primary);
+}
+
+.active {
+    display: block;
+}

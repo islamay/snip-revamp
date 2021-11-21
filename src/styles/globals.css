@@ -1,0 +1,39 @@
+:root {
+  font-size: 16px;
+  --white: #fff;
+  --primary: #4dadef;
+  --dark: #353c44;
+  --semi-dark: #3e4650;
+  --nav-icon-size: 2em;
+  --min-desktop: 1200px;
+  --min-laptop: 768px;
+  --min-tablet: 480px;
+  --transition: 200ms;
+  --desktop-padding: 200px;
+  --laptop-padding: 100px;
+  --mobile-padding: 25px;
+  --ipad-padding: 50px
+}
+
+html,
+body {
+  overflow-y: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  height: 3000px !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
