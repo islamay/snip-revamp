@@ -1,14 +1,15 @@
 import { FC, useState, CSSProperties } from 'react'
-import YoutubeCard from 'src/components/YoutubeCard'
+import { AiFillYoutube } from 'react-icons/ai'
+import TextIcon from 'src/components/TextIcon'
 
 
 const Test: FC = () => {
 
     return (
         <div style={style}>
-            <YoutubeCard
-                src='https://www.youtube.com/embed/67gYEK4FtzA'
-                title='I Live For This S***'
+            <TextIcon
+                startIcon={<AiFillYoutube size={40} />}
+                title='Video Kami'
             />
         </div>
     )
