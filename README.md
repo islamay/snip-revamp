@@ -18,6 +18,7 @@ Web Design: [Click Me](https://www.figma.com/file/Qt7ZZxZMSoGPMcdnWmNB2j/Untitle
 - ##### [ ] Share News
 - ##### [x] Sidebar
 - ##### [ ] Tags
+- ##### [x] Text Icon
 - ##### [ ] To Top Button
 - ##### [ ] User Info Popup
 - ##### [x] Youtube Card
