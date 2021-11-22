@@ -6,7 +6,9 @@ const Test: FC = () => {
 
     return (
         <div>
-
+            <Navbar
+                onSearchTermChange={() => { }}
+            />
         </div>
     )
 }

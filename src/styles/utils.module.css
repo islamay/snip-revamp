@@ -1,0 +1,95 @@
+/* Break Points :
+    Mobile: 328px - 480px
+    tablet: 481px - 768px
+    Laptop: 769px - 1024px
+    Dekstop: 1025px - 1200px+
+*/
+
+.mobile-only {
+    /* Done */
+}
+
+.tablet-only {
+    /* Done */
+}
+
+.tablet-and-larger {
+    /* Done */
+}
+
+.tablet-and-smaller {
+    /* Done */
+}
+
+.laptop-only {
+    /* Done */
+}
+
+.laptop-and-larger {
+    /* Done */
+}
+
+.laptop-and-smaller {}
+
+.desktop-only {}
+
+/* 480px Or More */
+@media only screen and (min-width: 480px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* 480px Or Less */
+@media screen and (max-width: 480px) {
+    .tablet-only {
+        display: none;
+    }
+
+    .tablet-and-larger {
+        display: none;
+    }
+}
+
+/* 768px Or More */
+@media screen and (min-width: 768px) {
+    .tablet-only {
+        display: none;
+    }
+
+    .tablet-and-smaller {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .laptop-only {
+        display: none;
+    }
+
+    .laptop-and-larger {
+        display: none;
+    }
+}
+
+/* 1024px Or More */
+@media screen and (min-width: 1024px) {
+    .tablet-and-smaller {
+        display: none;
+    }
+
+    .laptop-only {
+        display: none;
+    }
+
+    .laptop-and-smaller {
+        display: none;
+    }
+}
+
+/* 1024px Or Less */
+@media screen and (max-width: 1024px) {
+    .desktop-only {
+        display: none;
+    }
+}

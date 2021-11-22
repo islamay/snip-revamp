@@ -5,13 +5,14 @@ import FilterPopup from './FilterPopup'
 import useViewport from 'src/hooks/useViewport'
 import device from 'src/utils/device'
 import styles from 'src/styles/SearchInput.module.css'
+import utilsStyle from 'src/styles/utils.module.css'
 import useToggle from 'src/hooks/useToggle'
+import classNames from 'classnames'
 
 const SearchInput: FC = () => {
     const [searchTerm, setSearchTerm] = useState<string>('')
     const [filter, toggleFilter] = useToggle(false)
     const { vw } = useViewport()
-    const { isDesktop, isLaptop, isMobile, isTablet } = device(vw)
 
     const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
         setSearchTerm(event.target.value)
@@ -28,25 +29,19 @@ const SearchInput: FC = () => {
                 value={searchTerm}
             />
 
-            {
-                (isDesktop || isLaptop) && (
-                    <BsFilter className={styles['filter-icon']} />
-                )
-            }
 
-            {
-                isMobile
-                    ? (
-                        <div className={styles['search-dropdown']}>
-                            <FiSearch className={styles['search-icon']} onClick={toggleFilter} />
-                            <BsCaretDownFill size={10} />
-                            <FilterPopup active={filter} togglePopup={toggleFilter} />
-                        </div>
-                    )
-                    : (
-                        <FiSearch className={styles['search-icon']} />
-                    )
-            }
+            <BsFilter className={classNames(styles['filter-icon'], utilsStyle['laptop-and-larger'])} />
+
+
+
+            <div className={classNames(styles['search-dropdown'], utilsStyle['tablet-and-smaller'])}>
+                <FiSearch className={styles['search-icon']} onClick={toggleFilter} />
+                <BsCaretDownFill size={10} onClick={toggleFilter} />
+                <FilterPopup active={filter} togglePopup={toggleFilter} />
+            </div>
+
+            <FiSearch className={classNames(styles['search-icon'], utilsStyle['laptop-and-larger'])} />
+
 
         </div>
     )
