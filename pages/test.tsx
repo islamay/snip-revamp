@@ -1,18 +1,14 @@
 import { FC, useState, CSSProperties } from 'react'
-import NewsCard from 'src/components/NewsCard'
+import YoutubeCard from 'src/components/YoutubeCard'
+
 
 const Test: FC = () => {
 
     return (
         <div style={style}>
-            <NewsCard
-                src='https://tabloidnyata.com/wp-content/uploads/2017/06/mr-robot-season-2-after-show.jpg'
-                category='Other'
-                title='Mr Robot Season 5 is Out!'
-                publisher='Dean'
-                date='12/1/21'
-                time='9:30'
-                to='/'
+            <YoutubeCard
+                src='https://www.youtube.com/embed/67gYEK4FtzA'
+                title='I Live For This S***'
             />
         </div>
     )

@@ -11,7 +11,7 @@ Web Design: [Click Me](https://www.figma.com/file/Qt7ZZxZMSoGPMcdnWmNB2j/Untitle
 - ##### [ ] Footer
 - ##### [ ] Hero
 - ##### [x] Navbar
-- ##### [ ] News Card
+- ##### [x] News Card
 - ##### [x] Popup Overlay
 - ##### [ ] Related News
 - ##### [ ] Search Input
@@ -20,6 +20,6 @@ Web Design: [Click Me](https://www.figma.com/file/Qt7ZZxZMSoGPMcdnWmNB2j/Untitle
 - ##### [ ] Tags
 - ##### [ ] To Top Button
 - ##### [ ] User Info Popup
-- ##### [ ] Youtube Card
+- ##### [x] Youtube Card
 
 ### Note That this list is not all the component
