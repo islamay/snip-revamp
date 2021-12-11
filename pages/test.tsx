@@ -1,19 +1,24 @@
-import { FC, useState, CSSProperties } from 'react'
-import { AiFillYoutube } from 'react-icons/ai'
-import TextIcon from 'src/components/TextIcon'
+import _ from 'lodash'
+import { useState, CSSProperties } from 'react'
+import type { NextPage, GetServerSideProps } from 'next'
+import nextApi from 'src/api/nextApi'
+
+interface Props {
+    comments: any
+}
 
 
-const Test: FC = () => {
+
+const Test: NextPage<Props> = ({ comments }) => {
 
     return (
         <div style={style}>
-            <TextIcon
-                startIcon={<AiFillYoutube size={40} />}
-                title='Video Kami'
-            />
         </div>
     )
 }
+
+
+
 
 const style: CSSProperties = {
     padding: 20,
@@ -22,6 +27,17 @@ const style: CSSProperties = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center'
+}
+
+export const getServerSideProps: GetServerSideProps<any> = async () => {
+
+
+
+
+    return {
+        props: {
+        }
+    }
 }
 
 export default Test
